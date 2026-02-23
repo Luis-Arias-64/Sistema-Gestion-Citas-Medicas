@@ -1,9 +1,7 @@
 namespace SGCM.Domain.Base
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity<Tkey>
     {
-        public DateTime CreationDate {get;set;}
-        public DateTime? ModificationDate {get;set;}
-        public bool Status {get;set;}
+        public Tkey Id {get;set;}
     }
 }

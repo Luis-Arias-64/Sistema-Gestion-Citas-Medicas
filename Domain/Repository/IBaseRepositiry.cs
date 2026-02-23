@@ -5,12 +5,12 @@ namespace SGCM.Domain.Repository
 {
     public interface IBaseRepository<TEntity> where TEntity :class
     {
-        Task<OperationResult> CreateUser(TEntity entity);
-        Task<OperationResult> SaveUser(TEntity entity);
-        Task<OperationResult> UpdateUser(TEntity entity);
-        Task<OperationResult> DeleteUser(TEntity entity);
-        Task<OperationResult> GetAllUser();
-        Task<OperationResult> SearchUser(int id);
-        Task<bool> UserExists(TEntity entity);
+        Task<OperationResult> Create(TEntity entity);
+        Task<OperationResult> Save(TEntity entity);
+        Task<OperationResult> Update(TEntity entity);
+        Task<OperationResult> Delete(TEntity entity);
+        Task<OperationResult> GetAll();
+        Task<OperationResult> Search(int id);
+        Task<bool> Exists(TEntity entity);
     }
 }
