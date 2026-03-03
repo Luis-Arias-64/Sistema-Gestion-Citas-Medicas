@@ -1,8 +1,6 @@
 using SGCM.Entities.Users;
 using SGCM.Entities.Base;
 using SGCM.Entities.Enums;
-using SGCM.Entities.Validators;
-
 namespace SGCM.Entities.Appointments
 {
     public sealed class Appointment : AuditableEntity<int>
