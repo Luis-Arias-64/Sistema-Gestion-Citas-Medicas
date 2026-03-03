@@ -2,9 +2,9 @@ namespace SGCM.Entities.Exceptions
 {
     public sealed class InvalidMountException : BaseExeption
     {
-        public void ZeroMount()
+        public InvalidMountException(string message) : base(message)
         {
-            Console.WriteLine("The mount can't be less o equal zero");
+            
         }
     }
 }

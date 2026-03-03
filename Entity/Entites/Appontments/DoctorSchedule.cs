@@ -6,10 +6,9 @@ namespace SGCM.Entities.Appointments
     public sealed class DoctorSchedules : AuditableEntity<int>
     {
         public int DoctorId {get; init;}
-        public Doctor? Doctor {get; init;}
 
-        public DateOnly ScheduleDate {get; init;}
-        public TimeOnly StartAt {get; init;}
-        public TimeOnly EndAt {get; init;}
+        public DateTime ScheduleDate {get; init;}
+        public DateTime StartAt {get; init;}
+        public DateTime EndAt {get; init;}
     }
 }
