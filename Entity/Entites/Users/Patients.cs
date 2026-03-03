@@ -9,15 +9,6 @@ namespace SGCM.Entities.Users
         public BloodType TypeOfBlood {get; init;}
         public string EmergencyName {get; init;}
         public string EmergencyPhone {get; init;}
-
-        public Patient(string FirstName, string LastName, Gender gender, string Phone, string Email, string PasswordHash, DateTime DateOfBirth,short InsurancePlanId, string IdentificationNumber, 
-        BloodType TypeOfBlood, string EmergencyName, string EmergencyPhone ) : base(FirstName,LastName,gender,Phone, Email, PasswordHash,DateOfBirth)
-        {
-           this.InsurancePlanId = InsurancePlanId;
-           this.IdentificationNumber = IdentificationNumber;
-           this.TypeOfBlood = TypeOfBlood;
-           this.EmergencyName = EmergencyName;
-           this.EmergencyPhone = EmergencyPhone; 
-        }
+        
     }   
 }

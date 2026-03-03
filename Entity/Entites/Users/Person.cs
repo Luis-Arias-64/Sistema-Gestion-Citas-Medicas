@@ -14,15 +14,5 @@ namespace SGCM.Entities.Users
         public string PasswordHash {get; init;}
         public DateTime DateOfBirth { get; init; }
         public TypeUser typeUser {get; init;}
-        public Person(string FirstName, string LastName, Gender gender, string Phone, string Email, string PasswordHash, DateTime DateOfBirth) : base()
-        {
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.gender = gender;
-            this.Phone = Phone;
-            this.Email = Email;
-            this.PasswordHash = PasswordHash;
-            this.DateOfBirth = DateOfBirth;
-        }
     } 
 }

@@ -3,7 +3,7 @@ using SGCM.Entities.Validators;
 
 namespace SGCM.Entities.Services
 {
-    public static class ValidatePatient
+    public static class ValidateCreationPatient
     {
         public static void Validate(Patient patient)
         {

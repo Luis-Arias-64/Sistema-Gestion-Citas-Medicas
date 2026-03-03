@@ -1,11 +1,10 @@
 using SGCM.Entities.Base;
 
-namespace SGCM.Entities.Notification
+namespace SGCM.Entities.Notifications
 {
     public sealed class Notification : AuditableEntity<int>
     {
         public Enum? NotificationStatus {get; init;}
-        public short NotificationStatusId {get; init;}
 
         public string? Email {get; init;}
         public string? TypeNotification {get; init;}
