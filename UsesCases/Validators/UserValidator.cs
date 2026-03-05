@@ -1,5 +1,6 @@
-using SGCM.Entities.Exceptions;
-namespace SGCM.Entities.Appointments
+using SGCM.UsesCase.Exceptions;
+
+namespace SGCM.UsesCase.Validators
 {
     public static class UserValidator
     {
@@ -8,6 +9,13 @@ namespace SGCM.Entities.Appointments
             if (date > DateTime.UtcNow)
             {
                 throw new InvalidDateOfBirthException($"{fieldName} cannot be in the future.");
+            }
+        }
+        public static void LicenceExpiration(DateTime date,string fieldName)
+        {
+            if (date > DateTime.Now)
+            {
+                
             }
         }
     }

@@ -1,5 +1,6 @@
-using SGCM.Entities.Exceptions;
-namespace SGCM.Entities.Validators
+using SGCM.UsesCase.Exceptions;
+
+namespace SGCM.UsesCase.Validators
 {
     public static class BaseValidator
     {

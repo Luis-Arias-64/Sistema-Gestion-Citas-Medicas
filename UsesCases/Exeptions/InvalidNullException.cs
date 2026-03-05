@@ -1,4 +1,4 @@
-namespace SGCM.Entities.Exceptions
+namespace SGCM.UsesCase.Exceptions
 {
     public sealed class InvalidNullException : BaseExeption
     {

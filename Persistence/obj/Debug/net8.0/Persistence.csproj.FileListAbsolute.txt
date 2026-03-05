@@ -1,0 +1,5 @@
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Persistence/obj/Debug/net8.0/Persistence.csproj.AssemblyReference.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Persistence/obj/Debug/net8.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Persistence/obj/Debug/net8.0/Persistence.AssemblyInfoInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Persistence/obj/Debug/net8.0/Persistence.AssemblyInfo.cs
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Persistence/obj/Debug/net8.0/Persistence.csproj.CoreCompileInputs.cache

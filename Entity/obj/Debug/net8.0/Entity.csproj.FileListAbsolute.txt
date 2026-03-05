@@ -1,0 +1,11 @@
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/bin/Debug/net8.0/Entity.deps.json
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/bin/Debug/net8.0/Entity.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/bin/Debug/net8.0/Entity.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.AssemblyInfoInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.AssemblyInfo.cs
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.csproj.CoreCompileInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/refint/Entity.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/Entity.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Entity/obj/Debug/net8.0/ref/Entity.dll

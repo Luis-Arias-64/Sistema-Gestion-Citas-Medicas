@@ -1,6 +1,6 @@
-using SGCM.Entities.Exceptions;
+using SGCM.UsesCase.Exceptions;
 
-namespace SGCM.Entities.Validators
+namespace SGCM.UsesCase.Validators
 {
     public static class AppointmentValidator 
     {

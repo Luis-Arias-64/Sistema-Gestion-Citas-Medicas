@@ -1,7 +1,7 @@
 namespace SGCM.Entities.Base
 {
     public abstract class AuditableEntity<Tkey> : BaseEntity<Tkey>{
-        protected DateTime create_at {get; private set;}
+        protected DateTime create_at {get; init;}
         protected DateTime? update_at {get; private set;}
 
         public AuditableEntity()

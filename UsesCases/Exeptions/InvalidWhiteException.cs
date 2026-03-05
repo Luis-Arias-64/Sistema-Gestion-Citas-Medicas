@@ -1,4 +1,4 @@
-namespace SGCM.Entities.Exceptions
+namespace SGCM.UsesCase.Exceptions
 {
     public class InvalidWhiteException : BaseExeption
     {
