@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using SGCM.Entities.Enums;
 using SGCM.Entities.Users;
 using SGCM.UsesCase.Validators;

@@ -5,7 +5,7 @@ namespace SGCM.UsesCase.Factory
 {
     public sealed class InsurancePlanFactory
     {
-        public InsurancePlan Create(int InsuranceProviderId, string Name, decimal MaxCovered)
+        public InsurancePlan Create(short InsuranceProviderId, string Name, decimal MaxCovered)
         {
             BaseValidator.ValidateID(InsuranceProviderId, nameof(InsuranceProviderId));
             BaseValidator.NotNull(Name, nameof(Name));
