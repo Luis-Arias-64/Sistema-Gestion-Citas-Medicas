@@ -13,6 +13,6 @@ namespace SGCM.Entities.Users
         public string? Email {get; init;}
         public string? PasswordHash {get; init;}
         public DateTime DateOfBirth { get; init; }
-        public TypeUser typeOfUser {get; init;}
+        public TypeUser TypeOfUser {get; init;}
     } 
 }

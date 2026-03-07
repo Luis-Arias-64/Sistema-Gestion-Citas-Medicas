@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/InfraEstructur/InfraEstructur.csproj": {}
+    "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/InfraEstructur.csproj": {}
   },
   "projects": {
-    "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/InfraEstructur/InfraEstructur.csproj": {
+    "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/InfraEstructur.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/InfraEstructur/InfraEstructur.csproj",
+        "projectUniqueName": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/InfraEstructur.csproj",
         "projectName": "InfraEstructur",
-        "projectPath": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/InfraEstructur/InfraEstructur.csproj",
+        "projectPath": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/InfraEstructur.csproj",
         "packagesPath": "/home/luis/.nuget/packages/",
-        "outputPath": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/InfraEstructur/obj/",
+        "outputPath": "/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/luis/.nuget/NuGet/NuGet.Config"

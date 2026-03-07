@@ -1,0 +1,11 @@
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/bin/Debug/net8.0/InfraEstructure.deps.json
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/bin/Debug/net8.0/InfraEstructure.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/bin/Debug/net8.0/InfraEstructure.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.AssemblyInfoInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.AssemblyInfo.cs
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.csproj.CoreCompileInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/refint/InfraEstructure.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/InfraEstructure.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/Infraestructure/obj/Debug/net8.0/ref/InfraEstructure.dll

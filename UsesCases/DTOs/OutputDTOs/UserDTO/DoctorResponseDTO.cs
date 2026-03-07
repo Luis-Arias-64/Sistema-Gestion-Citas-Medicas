@@ -1,0 +1,4 @@
+namespace SGCM.UsesCase.DTOs
+{
+    
+}
