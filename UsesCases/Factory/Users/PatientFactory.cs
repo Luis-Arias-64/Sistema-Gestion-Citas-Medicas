@@ -28,7 +28,7 @@ namespace SGCM.UsesCase.Factory
               TypeOfBlood =  TypeOfBlood,
               EmergencyName = EmergencyName,
               EmergencyPhone = EmergencyPhone,
-              typeUser = TypeUser.Patient
+              typeOfUser = TypeUser.Patient
             };
         }
     }

@@ -25,7 +25,7 @@ namespace SGCM.UsesCase.Factory
                 LicenceNumber = LicenceNumber,
                 LicenceExpiration = LicenceExpiration,
                 EmploymentStartDate = EmploymentStartDate,
-                typeUser = TypeUser.Doctor
+                typeOfUser = TypeUser.Doctor
             };
         }
     }
