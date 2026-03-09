@@ -5,9 +5,9 @@ using SGCM.UsesCase.Validators;
 
 namespace SGCM.UsesCase.Factory
 {
-    public sealed class PatientFactory
+    public static class PatientFactory
     {    
-        public Patient Create(CreatePatientDTO patientDTO)
+        public static Patient Create(CreatePatientDTO patientDTO)
         {
             ValidateCreationUsers.Validate(patientDTO.FirstName, patientDTO.LastName, patientDTO.Phone, patientDTO.Email, patientDTO.Password, patientDTO.DateOfBirth);
             BaseValidator.ValidateID(patientDTO.InsurancePlanId, nameof(patientDTO.InsurancePlanId));
