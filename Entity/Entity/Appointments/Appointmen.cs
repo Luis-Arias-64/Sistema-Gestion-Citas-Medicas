@@ -8,9 +8,7 @@ namespace SGCM.Entities.Appointments
         public int PatientId { get; set; }
         public int DoctorId { get; set; }
         public AppointmentStatus AppointmentStatus { get; set; }
-        public DateTime AppointmentDate { get; set;}
         public DateTime StartAt {get; set;}
         public DateTime EndAt {get; set;}
-        public Decimal AppointmentCost {get; set;}
     }
 }

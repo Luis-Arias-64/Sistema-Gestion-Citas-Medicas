@@ -1,29 +1,25 @@
 using SGCM.Entities.Appointments;
 using SGCM.Entities.Enums;
+using SGCM.UsesCase.DTOs;
 using SGCM.UsesCase.Validators;
 
 namespace SGCM.UsesCase.Factory
 {
     public sealed class ValidateAppointment
     {
-        public Appointment Create(int PatientId, int DoctorId, DateTime AppointmentDate, DateTime StartAt, DateTime EndAt, 
-                            Decimal AppointmentCost)
+        public Appointment Create(CreateAppointmentDTO AppointmentDTO)
         {
-            BaseValidator.ValidateID(PatientId, nameof(PatientId));
-            BaseValidator.ValidateID(DoctorId, nameof(DoctorId));
-            AppointmentValidator.NotDate(AppointmentDate, nameof(AppointmentDate));
-            AppointmentValidator.NotOverlap(StartAt, EndAt);
-            AppointmentValidator.NotZeroMount(AppointmentCost, nameof(AppointmentCost));
+            BaseValidator.ValidateID(AppointmentDTO.PatientId, nameof(AppointmentDTO.PatientId));
+            BaseValidator.ValidateID(AppointmentDTO.DoctorId, nameof(AppointmentDTO.DoctorId));
+            AppointmentValidator.NotOverlap(AppointmentDTO.StartAt, AppointmentDTO.EndAt);
 
             return new Appointment()
             {
-                PatientId = PatientId,
-                DoctorId = DoctorId,
+                PatientId = AppointmentDTO.PatientId,
+                DoctorId = AppointmentDTO.DoctorId,
                 AppointmentStatus = AppointmentStatus.Pending,
-                AppointmentDate  = AppointmentDate,
-                StartAt = StartAt,
-                EndAt = EndAt,
-                AppointmentCost = AppointmentCost
+                StartAt = AppointmentDTO.StartAt,
+                EndAt = AppointmentDTO.EndAt,
             };
         }
     }

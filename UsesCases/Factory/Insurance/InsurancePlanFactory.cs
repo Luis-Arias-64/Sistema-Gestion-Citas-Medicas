@@ -9,7 +9,6 @@ namespace SGCM.UsesCase.Factory
         {
             BaseValidator.ValidateID(InsuranceProviderId, nameof(InsuranceProviderId));
             BaseValidator.NotNull(Name, nameof(Name));
-            AppointmentValidator.NotZeroMount(MaxCovered, nameof(MaxCovered));
 
             return new InsurancePlan()
             {

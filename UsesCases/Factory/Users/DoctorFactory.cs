@@ -1,31 +1,31 @@
 using SGCM.Entities.Enums;
 using SGCM.Entities.Users;
+using SGCM.UsesCase.DTOs;
 using SGCM.UsesCase.Validators;
 
 namespace SGCM.UsesCase.Factory
 {
     public sealed class DoctorFactory
     {
-        public Doctor Create(string FirstName, string LastName, string Phone, string Email, string PasswordHash, DateTime DateOfBirth,short EspecialityId, 
-                               string LicenceNumber, DateTime LicenceExpiration, DateTime EmploymentStartDate)
+        public Doctor Create(CreateDoctorDTO doctorDTO)
         {
-            ValidateCreationUsers.Validate(FirstName, LastName,Phone,Email,PasswordHash,DateOfBirth);
-            BaseValidator.ValidateID(EspecialityId, nameof(EspecialityId));
-            BaseValidator.NotNullOrWhiteSpaces(LicenceNumber, nameof(LicenceNumber), 20);
+            ValidateCreationUsers.Validate(doctorDTO.FirstName, doctorDTO.LastName, doctorDTO.Phone, doctorDTO.Email, doctorDTO.Password, doctorDTO.DateOfBirth);
+            BaseValidator.ValidateID(doctorDTO.EspecialityId, nameof(doctorDTO.EspecialityId));
+            BaseValidator.NotNullOrWhiteSpaces(doctorDTO.LicenceNumber, nameof(doctorDTO.LicenceExpiration), 20);
             
             return new Doctor()
             {
-                FirstName = FirstName,
-                LastName = LastName,
-                Phone = Phone,
-                Email = Email,
-                PasswordHash = PasswordHash,
-                DateOfBirth = DateOfBirth,
-                EspecialityId = EspecialityId,
-                LicenceNumber = LicenceNumber,
-                LicenceExpiration = LicenceExpiration,
-                EmploymentStartDate = EmploymentStartDate,
-                TypeOfUser = TypeUser.Doctor
+                FirstName = doctorDTO.FirstName,
+                LastName = doctorDTO.LastName,
+                GenderOfUser = doctorDTO.Gender,
+                Phone = doctorDTO.Phone,
+                Email = doctorDTO.Email,
+                PasswordHash = doctorDTO.Password,
+                DateOfBirth = doctorDTO.DateOfBirth,
+                EspecialityId = doctorDTO.EspecialityId,
+                LicenceNumber = doctorDTO.LicenceNumber,
+                LicenceExpiration = doctorDTO.LicenceExpiration,
+                EmploymentStartDate = doctorDTO.EmploymentStartDate,
             };
         }
     }

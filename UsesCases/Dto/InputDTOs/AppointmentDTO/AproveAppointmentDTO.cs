@@ -1,6 +1,6 @@
 namespace SGCM.UsesCase.DTOs
 {
-    public record IAppointmentDTO
+    public sealed record IAppointmentDTO
     {
     }
 }

@@ -15,7 +15,6 @@ namespace SGCM.UsesCase.Features.UserRegister
 
         public async Task RegisterPatient(CreatePatientDTO createPatientDTO)
         {
-            PatientFactory patientFactory
         }
     }
 }
