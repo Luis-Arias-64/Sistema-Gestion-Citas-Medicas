@@ -6,6 +6,5 @@ namespace SGCM.Entities.Insurance
     {
         public int InsuranceProviderId {get; set;}
         public string Name {get; set;} = default!;
-        public Decimal MaxCovered {get; set;}
     }
 }

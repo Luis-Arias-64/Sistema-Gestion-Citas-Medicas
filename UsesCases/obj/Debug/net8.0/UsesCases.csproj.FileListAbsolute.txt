@@ -3,3 +3,13 @@
 /home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.AssemblyInfoInputs.cache
 /home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.AssemblyInfo.cs
 /home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.csproj.CoreCompileInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/bin/Debug/net8.0/UsesCases.deps.json
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/bin/Debug/net8.0/UsesCases.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/bin/Debug/net8.0/UsesCases.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/bin/Debug/net8.0/Entity.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/bin/Debug/net8.0/Entity.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.csproj.CopyComplete
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/refint/UsesCases.dll
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.pdb
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/ref/UsesCases.dll

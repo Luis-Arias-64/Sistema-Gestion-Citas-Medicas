@@ -18,15 +18,15 @@ namespace SGCM.UsesCase.Factory
             return new InsuranceProvider()
             {
                 Name = createInsuranceProviderDTO.Name,
-                Phone = createInsuranceProviderDTO.PhoneNumber,
+                PhoneMumber = createInsuranceProviderDTO.PhoneNumber,
                 Email = createInsuranceProviderDTO.Email,
                 Address = createInsuranceProviderDTO.Address,
                 City = createInsuranceProviderDTO.City,
                 Town = createInsuranceProviderDTO.Town,
-                ZipCode = createInsuranceProviderDTO.ZipCode,
                 Country = createInsuranceProviderDTO.Country,
+                ZipCode =createInsuranceProviderDTO.ZipCode,
                 Website = createInsuranceProviderDTO.Website,
-                ContanctCenter = createInsuranceProviderDTO.ContactCenterPhone  
+                ContactCenterPhone = createInsuranceProviderDTO.ContactCenterPhone  
             };
         }
     }

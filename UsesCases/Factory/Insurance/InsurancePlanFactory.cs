@@ -1,20 +1,20 @@
 using SGCM.Entities.Insurance;
+using SGCM.UsesCase.DTOs;
 using SGCM.UsesCase.Validators;
 
 namespace SGCM.UsesCase.Factory
 {
     public sealed class InsurancePlanFactory
     {
-        public InsurancePlan Create(short InsuranceProviderId, string Name, decimal MaxCovered)
+        public InsurancePlan Create(CreateInsurancePlanDTO createInsurancePlanDTO)
         {
-            BaseValidator.ValidateID(InsuranceProviderId, nameof(InsuranceProviderId));
-            BaseValidator.NotNull(Name, nameof(Name));
+            BaseValidator.ValidateID(createInsurancePlanDTO.InsuranceProviderId, nameof(createInsurancePlanDTO.InsuranceProviderId));
+            BaseValidator.NotNull(createInsurancePlanDTO.Name, nameof(createInsurancePlanDTO.Name));
 
             return new InsurancePlan()
             {
-              InsuranceProviderId = InsuranceProviderId,
-              Name = Name,
-              MaxCovered = MaxCovered  
+              InsuranceProviderId = createInsurancePlanDTO.InsuranceProviderId ,
+              Name = createInsurancePlanDTO.Name,
             };
         }
     }

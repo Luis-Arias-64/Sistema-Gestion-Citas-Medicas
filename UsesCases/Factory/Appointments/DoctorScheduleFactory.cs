@@ -1,22 +1,23 @@
 using SGCM.Entities.Appointments;
+using SGCM.UsesCase.DTOs;
 using SGCM.UsesCase.Validators;
 
 namespace SGCM.UsesCase.Factory
 {
     public sealed class ValidateCreationDoctorSchedule
     {
-        public DoctorSchedules Create(int DoctorId, DateTime ScheduleDate, DateTime StartAt, DateTime EndAt)
+        public DoctorSchedules Create(CreateScheduleDTO createScheduleDTO)
         {
-            BaseValidator.ValidateID(DoctorId, nameof(DoctorId));
-            BaseValidator.NotNull(ScheduleDate, nameof(ScheduleDate));
-            AppointmentValidator.NotOverlap(StartAt, EndAt);
+            BaseValidator.ValidateID(createScheduleDTO.DoctorId, nameof(createScheduleDTO.DoctorId));
+            BaseValidator.NotNull(createScheduleDTO.ScheduleDate, nameof(createScheduleDTO.ScheduleDate));
+            AppointmentValidator.NotOverlap(createScheduleDTO.StartAt, createScheduleDTO.EndAt);
 
             return new DoctorSchedules()
             {
-                DoctorId = DoctorId,
-                ScheduleDate = ScheduleDate,
-                StartAt = StartAt,
-                EndAt = EndAt
+                DoctorId = createScheduleDTO.DoctorId,
+                ScheduleDate = createScheduleDTO.ScheduleDate,
+                StartAt = createScheduleDTO.StartAt,
+                EndAt = createScheduleDTO.EndAt
             };
         }
     }
