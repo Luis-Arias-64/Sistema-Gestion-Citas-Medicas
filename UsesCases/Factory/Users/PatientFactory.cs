@@ -19,10 +19,10 @@ namespace SGCM.UsesCase.Factory
             {
               FirstName = patientDTO.FirstName,
               LastName = patientDTO.LastName,
-              GenderOfUser = patientDTO.Gender,
+              Gender = patientDTO.Gender,
               Phone = patientDTO.Phone,
               Email = patientDTO.Email,
-              PasswordHash = patientDTO.Password,
+              Password = patientDTO.Password,
               DateOfBirth = patientDTO.DateOfBirth,
 
               InsurancePlanId = patientDTO.InsurancePlanId,

@@ -14,10 +14,10 @@ namespace SGCM.UsesCase.Factory
             {
                 FirstName = personalDTO.FirstName,
                 LastName = personalDTO.LastName,
-                GenderOfUser = personalDTO.Gender,
+                Gender = personalDTO.Gender,
                 Phone = personalDTO.Phone,
                 Email = personalDTO.Email,
-                PasswordHash = personalDTO.Password,
+                Password = personalDTO.Password,
                 DateOfBirth = personalDTO.DateOfBirth,
                 Role = personalDTO.Role
             };

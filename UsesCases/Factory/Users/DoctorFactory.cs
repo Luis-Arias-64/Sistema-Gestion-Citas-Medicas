@@ -17,10 +17,10 @@ namespace SGCM.UsesCase.Factory
             {
                 FirstName = doctorDTO.FirstName,
                 LastName = doctorDTO.LastName,
-                GenderOfUser = doctorDTO.Gender,
+                Gender = doctorDTO.Gender,
                 Phone = doctorDTO.Phone,
                 Email = doctorDTO.Email,
-                PasswordHash = doctorDTO.Password,
+                Password = doctorDTO.Password,
                 DateOfBirth = doctorDTO.DateOfBirth,
                 EspecialityId = doctorDTO.EspecialityId,
                 LicenceNumber = doctorDTO.LicenceNumber,

@@ -9,16 +9,16 @@ namespace SGCM.UsesCase.Factory
         public InsuranceProvider Create(CreateInsuranceProviderDTO createInsuranceProviderDTO)
         {
             BaseValidator.NotNull(createInsuranceProviderDTO.Name, nameof(createInsuranceProviderDTO.Name));
-            BaseValidator.NotNull(createInsuranceProviderDTO.Phone, nameof(createInsuranceProviderDTO.Phone));
+            BaseValidator.NotNull(createInsuranceProviderDTO.PhoneNumber, nameof(createInsuranceProviderDTO.PhoneNumber));
             BaseValidator.NotNull(createInsuranceProviderDTO.Email, nameof(createInsuranceProviderDTO.Email));
             BaseValidator.NotNull(createInsuranceProviderDTO.City, nameof(createInsuranceProviderDTO.City));
             BaseValidator.NotNull(createInsuranceProviderDTO.Country, nameof(createInsuranceProviderDTO.Country));
-            BaseValidator.NotNull(createInsuranceProviderDTO.ContactCenter, nameof(createInsuranceProviderDTO.ContactCenter));
+            BaseValidator.NotNull(createInsuranceProviderDTO.ContactCenterPhone, nameof(createInsuranceProviderDTO.ContactCenterPhone));
         
             return new InsuranceProvider()
             {
                 Name = createInsuranceProviderDTO.Name,
-                Phone = createInsuranceProviderDTO.Phone,
+                Phone = createInsuranceProviderDTO.PhoneNumber,
                 Email = createInsuranceProviderDTO.Email,
                 Address = createInsuranceProviderDTO.Address,
                 City = createInsuranceProviderDTO.City,
@@ -26,7 +26,7 @@ namespace SGCM.UsesCase.Factory
                 ZipCode = createInsuranceProviderDTO.ZipCode,
                 Country = createInsuranceProviderDTO.Country,
                 Website = createInsuranceProviderDTO.Website,
-                ContanctCenter = createInsuranceProviderDTO.ContactCenter  
+                ContanctCenter = createInsuranceProviderDTO.ContactCenterPhone  
             };
         }
     }
