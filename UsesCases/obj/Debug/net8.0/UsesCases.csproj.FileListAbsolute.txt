@@ -1,0 +1,5 @@
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.csproj.AssemblyReference.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.AssemblyInfoInputs.cache
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.AssemblyInfo.cs
+/home/luis/Desktop/ProyectoFinalFrancis/SGCM/UsesCases/obj/Debug/net8.0/UsesCases.csproj.CoreCompileInputs.cache
