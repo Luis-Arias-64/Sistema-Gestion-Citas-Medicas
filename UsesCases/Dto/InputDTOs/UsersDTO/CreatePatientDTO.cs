@@ -1,17 +1,10 @@
 using SGCM.Entities.Enums;
+using SGCM.UsesCase.DTOs.Input;
 
 namespace SGCM.UsesCase.DTOs
 {
-    public record CreatePatientDTO
+    public record CreatePatientDTO : PersonDTO
     { 
-        public string FirstName { get; init; } = default!;
-        public string LastName { get; init; } = default!;
-        public GenderOfUser Gender { get; init; }
-        public string Phone { get; init; } = default!;
-        public string Email {get; init;} = default!;
-        public string Password {get; init;} = default!;
-        public DateTime DateOfBirth { get; init;}
-
         public short InsurancePlanId {get; set;}
         public string IdentificationNumber {get; init;} = default!;
         public BloodType TypeOfBlood {get; init;}

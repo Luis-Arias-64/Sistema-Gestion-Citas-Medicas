@@ -6,7 +6,7 @@ namespace SGCM.UsesCase.Factory
 {
     public sealed class PersonalFactory
     {
-        public Personal Create(CreatePersonalDTO personalDTO)
+        public Personal Create(PersonalDTO personalDTO)
         {
             ValidateCreationUsers.Validate(personalDTO.FirstName, personalDTO.LastName, personalDTO.Phone, personalDTO.Email, personalDTO.Password, personalDTO.DateOfBirth);
 

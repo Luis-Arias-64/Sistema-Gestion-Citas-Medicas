@@ -7,7 +7,7 @@ namespace SGCM.UsesCase.Factory
 {
     public sealed class DoctorFactory
     {
-        public Doctor Create(CreateDoctorDTO doctorDTO)
+        public Doctor Create(DoctorDTO doctorDTO)
         {
             ValidateCreationUsers.Validate(doctorDTO.FirstName, doctorDTO.LastName, doctorDTO.Phone, doctorDTO.Email, doctorDTO.Password, doctorDTO.DateOfBirth);
             BaseValidator.ValidateID(doctorDTO.EspecialityId, nameof(doctorDTO.EspecialityId));

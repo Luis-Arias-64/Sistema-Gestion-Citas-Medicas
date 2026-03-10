@@ -7,6 +7,6 @@ namespace SGCM.UsesCase.Repository
         Task<bool> DeleteAsync(Tid value, CancellationToken ct = default);
         Task<TEntity> GetByIdAsync(Tid value, CancellationToken ct = default);
         Task<IEnumerable<TEntity>> GetAllAsync(TEntity entity);
-        Task<bool> ExistsAsync(Tid value, CancellationToken ct = default);
+        Task<bool> ExistsAsync(Tid value, CancellationToken ct = default); 
     }
 }
