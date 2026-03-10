@@ -4,9 +4,9 @@ using SGCM.UsesCase.DTOs;
 
 namespace SGCM.UsesCase.Factory
 {
-    public sealed class PersonalFactory
+    public static class PersonalFactory
     {
-        public Personal Create(PersonalDTO personalDTO)
+        public static Personal Create(CreatePersonalDTO personalDTO)
         {
             ValidateCreationUsers.Validate(personalDTO.FirstName, personalDTO.LastName, personalDTO.Phone, personalDTO.Email, personalDTO.Password, personalDTO.DateOfBirth);
 

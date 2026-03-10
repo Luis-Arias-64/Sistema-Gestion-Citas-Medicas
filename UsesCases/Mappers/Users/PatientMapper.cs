@@ -10,8 +10,6 @@ namespace SGCM.UsesCase.Mappers
             FirstName = p.FirstName,
             LastName = p.LastName,
             Gender = p.Gender,
-            Phone = p.Phone,
-            DateOfBirth = p.DateOfBirth,
 
             TypeOfBlood = p.TypeOfBlood,
             EmergencyName = p.EmergencyName,
