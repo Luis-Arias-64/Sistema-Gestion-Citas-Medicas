@@ -1,4 +1,4 @@
-namespace SGCM.UsesCase.Repository
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface IBaseRepository<TEntity, Tid>
     {

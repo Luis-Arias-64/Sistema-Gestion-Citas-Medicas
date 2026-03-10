@@ -2,7 +2,7 @@ using SGCM.Entities.Appointments;
 using SGCM.Entities.Base;
 using SGCM.Entities.Users;
 
-namespace SGCM.UsesCase.Repository
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface IPersonalRepository : IBaseUsersRepository<Personal, int>
     {

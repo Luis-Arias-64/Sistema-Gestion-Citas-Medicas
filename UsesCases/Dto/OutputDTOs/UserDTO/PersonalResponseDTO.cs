@@ -1,6 +1,6 @@
 namespace SGCM.UsesCase.DTOs
 {
-    public record PersonalResponseDTO
+    public record PersonalResponseDTO : PersonResposeDTO
     {
         
     }

@@ -1,6 +1,4 @@
-using SGCM.Entities.Users;
-
-namespace SGCM.UsesCase.Repository
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface IAutentificationRepository <TEntity>
     {

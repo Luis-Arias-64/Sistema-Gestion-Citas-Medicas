@@ -1,6 +1,6 @@
 using SGCM.Entities.Appointments;
 
-namespace SGCM.UsesCase.Repository
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface IAppointmentRepository : IBaseRepository<Appointment,int>
     {

@@ -1,7 +1,6 @@
 using SGCM.Entities.Notifications;
-using SGCM.UsesCase.Repository;
 
-namespace SGCM.UsesCase.Validators
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface INotificationRepository : IBaseRepository<Notification,int>
     {

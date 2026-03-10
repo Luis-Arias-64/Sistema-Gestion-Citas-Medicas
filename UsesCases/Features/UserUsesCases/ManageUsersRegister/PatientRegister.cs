@@ -1,21 +1,19 @@
 using SGCM.UsesCase.DTOs;
 using SGCM.UsesCase.Factory;
-using SGCM.UsesCase.Repository;
+using SGCM.UsesCase.Interfaces.Repository;
 using SGCM.UsesCase.Interfaces.Logger;
 using SGCM.Entities.Users;
-using SGCM.UsesCase.Validators;
 using SGCM.UsesCase.Base;
 using SGCM.UsesCase.Mappers;
 
 namespace SGCM.UsesCase.Features.UserRegister
 {
-    public sealed class PatientRegistrer
+    public sealed class PatientRegister
     {
         private readonly IPatientRepository _repository;
         private readonly IInsurancePlanProviderRepository _insurancePlan;
         private readonly IBaseLogger<Patient> _logger;
-
-        public PatientRegistrer(IPatientRepository repository, IBaseLogger<Patient> logger,IInsurancePlanProviderRepository planProvider)
+        public PatientRegister(IPatientRepository repository, IBaseLogger<Patient> logger,IInsurancePlanProviderRepository planProvider)
         {
             _repository = repository;
             _logger = logger;
@@ -27,20 +25,22 @@ namespace SGCM.UsesCase.Features.UserRegister
             {
                 if (await _repository.IdentificationExitsAsync(dTO.IdentificationNumber))
                 {
-                    return OperationResult<PatientResponseDTO>.CustomError("This identification already number exists");
+                    return OperationResult<PatientResponseDTO>.CustomError("Identification number already exists");
                 }
                 if (!await _insurancePlan.ExistsAsync(dTO.InsurancePlanId))
                 {
-                    return OperationResult<PatientResponseDTO>.CustomError("This insurance plan doesnt exists");
+                    return OperationResult<PatientResponseDTO>.CustomError("Insurance plan does not exists");
                 }
                 if (await _repository.EmailExistsAsync(dTO.Email))
                 {
-                    return OperationResult<PatientResponseDTO>.CustomError("This email address already exists");
+                    return OperationResult<PatientResponseDTO>.CustomError("Email address already exists");
                 }
 
-                var patientValidate = PatientFactory.Create(dTO);
+                var patient = PatientFactory.Create(dTO);
 
-                var createdPatient = await _repository.AddAsync(patientValidate);
+                await _logger.LogInformationAsync("Registering new patient");
+
+                var createdPatient = await _repository.AddAsync(patient);
 
                 var dtoMap = PatientMapper.MapDto(createdPatient);
 
@@ -48,10 +48,10 @@ namespace SGCM.UsesCase.Features.UserRegister
             }
             catch(Exception ex)
             {
-                return null;
+                await _logger.LogErrorAsync("Error registering patient", ex);
+
+                return OperationResult<PatientResponseDTO>.Failure("Unexpected error occurred");
             }
         }    
-
-
     }
 }

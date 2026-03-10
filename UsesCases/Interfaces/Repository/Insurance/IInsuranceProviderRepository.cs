@@ -1,7 +1,6 @@
 using SGCM.Entities.Insurance;
-using SGCM.UsesCase.Repository;
 
-namespace SGCM.UsesCase.Validators
+namespace SGCM.UsesCase.Interfaces.Repository
 {
     public interface IInsuranceProviderRepository : IBaseRepository<InsuranceProvider,short>
     {
